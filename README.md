@@ -26,11 +26,11 @@ Execute the command to install the required package:
 
 After placing yourself in the repository folder run the following command if you use Windows:
 
-   ```pyinstaller -F --onefile --windowed --add-data -icon icon.ico dump_release_tntvillage_2019-08-30.csv;. Main.py```
+   ```pyinstaller -F --onefile --windowed -icon icon.ico --add-data dump_release_tntvillage_2019-08-30.csv;. Main.py```
 
 if you are using MacOS or Linux use this instead:
 
-   ```pyinstaller -F --onefile --windowed --add-data -icon icon.ico dump_release_tntvillage_2019-08-30.csv:. Main.py```
+   ```pyinstaller -F --onefile --windowed -icon icon.ico --add-data dump_release_tntvillage_2019-08-30.csv:. Main.py```
 
 Once the process is finished, the "dist" folder will be created in which there will be a single executable file, which can be run rather than opening the command line each time.
 
