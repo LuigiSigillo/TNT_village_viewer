@@ -17,7 +17,7 @@ Da quando TNT village ha chiuso, non è più possibile accedere al loro sito e c
      ```python Main.py```
 7. Eseguite una ricerca, selezionate il torrent dalla lista che apparirà, e infine cliccate sul tasto Download. Se tutto è andato a buon fine e avete un client Torrent installato, dovrebbe aprirsi già con il torrent pronto da aggiungere al download.
 
-# TNT_village_viewer (English)
+# TNT_village_viewer (ENGLISH)
 A tribute to the TNT community.
 # Disclaimer
 The csv file containing the torrents is available on the TNT village website, so it is NOT present in this repository. It is the user's responsibility to download it at his own risk.
