@@ -1,5 +1,7 @@
 import json
 import csv
+import sys
+import os
 
 class CSVParser():
     def __init__(self):
@@ -23,12 +25,23 @@ class CSVParser():
             return '{0:.2f} GB'.format(B/GB)
         elif TB <= B:
             return '{0:.2f} TB'.format(B/TB)
-    
+            
+    def resource_path(self,relative_path):
+        """ Get absolute path to resource, works for dev and for PyInstaller """
+        try:
+            # PyInstaller creates a temp folder and stores path in _MEIPASS
+            base_path = sys._MEIPASS
+        except Exception:
+            base_path = os.path.abspath(".")
+
+        return os.path.join(base_path, relative_path)
+
     def do_query(self,name):
         search = name
         body={}
         n=0
-        with open('dump_release_tntvillage_2019-08-30.csv', mode='r',encoding="utf8") as csv_file: #TODO add path to your csv file if different name or different folder
+        file_path = self.resource_path('dump_release_tntvillage_2019-08-30.csv')
+        with open(file_path, mode='r',encoding="utf8") as csv_file: #TODO add path to your csv file if different name or different folder
             csv_reader = csv.DictReader(csv_file)
             for row in csv_reader:
                 tit = row["TITOLO"].lower() 
