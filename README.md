@@ -9,9 +9,13 @@ Since TNT village closed, it is no longer possible to access their site and cons
 2. Download from the [TNT site](http://www.tntvillage.scambioetico.org/) and extract the csv file contained in the archive
 3. Move the csv file into the folder where you extracted the repository
 4. Open the terminal and go to the repository folder
-7. Execute the command to install the required packages:
+5. Execute the command to install the required packages:
 
     ```pip install -r requirements.txt```
+    
+    If you are using ubuntu and this command has errors try to use:
+    
+    ``` pip install -U   -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-18.04  wxPython```
 6. Start the program with the command:
 
     ```python Main.py```
@@ -19,7 +23,7 @@ Since TNT village closed, it is no longer possible to access their site and cons
 7. Perform a search, select the torrent from the list that appears, and finally click on the Download button. If everything went well and you have a Torrent client installed, it should already open with the torrent ready to be added to the download.
 
 ## If you are lazy
-Follow the steps in the previous section up to and including point 4.
+Follow the steps in the previous section up to and including point 5.
 Execute the command to install the required package:
 
    ```pip install pyinstaller```
@@ -30,7 +34,7 @@ After placing yourself in the repository folder run the following command if you
 
 if you are using MacOS or Linux use this instead:
 
-   ```pyinstaller -F --onefile --windowed -icon icon.ico --add-data dump_release_tntvillage_2019-08-30.csv:. Main.py```
+   ```pyinstaller -F --onefile --windowed -i icon.ico --add-data dump_release_tntvillage_2019-08-30.csv:. Main.py```
 
 Once the process is finished, the "dist" folder will be created in which there will be a single executable file, which can be run rather than opening the command line each time.
 
@@ -48,23 +52,27 @@ Da quando TNT village ha chiuso, non è più possibile accedere al loro sito e c
 5. Eseguite il comando per installare i prerequisiti necessari:
 
      ```pip install -r requirements.txt```
+     
+   Se usi Ubuntu e il comando precedente causa errori, prova questo:
+   
+    ``` pip install -U   -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-18.04  wxPython```
 6. Avviate il programma con il comando:
 
      ```python Main.py```
 7. Eseguite una ricerca, selezionate il torrent dalla lista che apparirà, e infine cliccate sul tasto Download. Se tutto è andato a buon fine e avete un client Torrent installato, dovrebbe aprirsi già con il torrent pronto da aggiungere al download.
 
 ## Se sei pigro
-Segui i passi della sezione precedente fino al punto 4 compreso.
+Segui i passi della sezione precedente fino al punto 5 compreso.
 Execute the command to install the required package:
 
    ```pip install pyinstaller```
 
 Dopo esserti posizionato nella cartella della repository esegui il seguente comando se usi Windows:
 
-   ```pyinstaller -F --onefile --windowed --add-data -icon icon.ico dump_release_tntvillage_2019-08-30.csv;. Main.py```
+   ```pyinstaller -F --onefile --windowed -icon icon.ico --add-data dump_release_tntvillage_2019-08-30.csv;. Main.py```
 
 se usi MacOS o Linux usa questo:
 
-   ```pyinstaller -F --onefile --windowed --add-data -icon icon.ico dump_release_tntvillage_2019-08-30.csv:. Main.py```
+   ```pyinstaller -F --onefile --windowed -i icon.ico --add-data dump_release_tntvillage_2019-08-30.csv:. Main.py```
 
 Una volta finito il processo, si sarà creata la cartella "dist" dentro al quale sarà presente un unico file eseguibile, da poter eseguire piuttosto che aprire ogni volta la riga di comando.
