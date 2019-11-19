@@ -9,10 +9,13 @@ Da quando TNT village ha chiuso, non è più possibile accedere al loro sito e c
 2. Scaricate dal [sito di TNT](http://www.tntvillage.scambioetico.org/) ed estraete il file csv contenuto all interno dell archivio
 3. Spostate il file csv all'interno della cartella nella quale avete estratto la repository
 4. Aprite il terminale e posizionatevi all interno della cartella della repository
-5. Avviate il programma con il comando:
+5. Eseguite il comando per installare i prerequisiti necessari:
+
+     ```pip install -r requirements.txt```
+6. Avviate il programma con il comando:
 
      ```python Main.py```
-6. Eseguite una ricerca, selezionate il torrent dalla lista che apparirà, e infine cliccate sul tasto Download. Se tutto è andato a buon fine e avete un client Torrent installato, dovrebbe aprirsi già con il torrent pronto da aggiungere al download.
+7. Eseguite una ricerca, selezionate il torrent dalla lista che apparirà, e infine cliccate sul tasto Download. Se tutto è andato a buon fine e avete un client Torrent installato, dovrebbe aprirsi già con il torrent pronto da aggiungere al download.
 
 # TNT_village_viewer (English)
 A tribute to the TNT community.
@@ -25,8 +28,11 @@ Since TNT village closed, it is no longer possible to access their site and cons
 2. Download from the [TNT site](http://www.tntvillage.scambioetico.org/) and extract the csv file contained in the archive
 3. Move the csv file into the folder where you extracted the repository
 4. Open the terminal and go to the repository folder
-5. Start the program with the command:
+7. Execute the command to install the required packages:
+
+    ```pip install -r requirements.txt```
+6. Start the program with the command:
 
     ```python Main.py```
 
-6. Perform a search, select the torrent from the list that appears, and finally click on the Download button. If everything went well and you have a Torrent client installed, it should already open with the torrent ready to be added to the download.
+7. Perform a search, select the torrent from the list that appears, and finally click on the Download button. If everything went well and you have a Torrent client installed, it should already open with the torrent ready to be added to the download.

@@ -1,5 +1,4 @@
 import wx
-import glob
 from TorrentFrame import TorrentFrame
 
 
